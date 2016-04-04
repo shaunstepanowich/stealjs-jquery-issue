@@ -1,0 +1,19 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "app.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "author": "Shaun Stepanowich",
+  "license": "ISC",
+  "dependencies": {
+    "can": "^2.3.22",
+    "express": "^4.13.3",
+    "grunt": "^0.4.5",
+    "jquery": "^2.2.0",
+    "steal": "^0.15.3",
+    "steal-tools": "^0.15.5"
+  }
+}
