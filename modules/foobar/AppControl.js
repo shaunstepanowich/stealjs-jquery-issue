@@ -1,6 +1,6 @@
 steal('can',
-      'test/AppControl.stache',
-//      'test/AnotherTemplate.stache',      
+      'foobar/AppControl.stache',
+//      'foobar/AnotherTemplate.stache',      
 function (can,
           view) {
 'use strict';
@@ -21,7 +21,7 @@ function (can,
             
             var me = this;
             
-            steal('test/AnotherTemplate.stache',function(another){
+            steal('foobar/AnotherTemplate.stache',function(another){
                 
                 var viewFrag = can.view(another);
             

@@ -21,14 +21,14 @@
           "stache" : "can/view/stache/system"
       },
       "paths" : {
-        "test/*"      : "modules/test/*.js",
-        "test/*.stache"      : "modules/test/*.stache"
+        "foobar/*"      : "modules/foobar/*.js",
+        "foobar/*.stache"      : "modules/foobar/*.stache"
       },
       "envs": {
         "production": {
             "paths": {        
-                "test/*"      : "test/*.js",
-                "test/*.stache"      : "test/*.stache"
+                "foobar/*"      : "foobar/*.js",
+                "foobar/*.stache"      : "foobar/*.stache"
             }
          }
       }         

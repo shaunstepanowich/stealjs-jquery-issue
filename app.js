@@ -9,7 +9,7 @@ var app = express();
 app.use('/node_modules/steal/', express.static(__dirname + '/modules/steal/'));
 app.use('/dist',express.static(__dirname + '/dist/'));
 app.use('/',express.static(__dirname + '/view/'));
-app.use('/test',express.static(__dirname + '/modules/test/'));
+app.use('/foobar',express.static(__dirname + '/modules/foobar/'));
 
 var http = require('http');
    
