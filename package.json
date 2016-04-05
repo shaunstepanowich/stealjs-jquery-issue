@@ -15,5 +15,22 @@
     "jquery": "^2.2.0",
     "steal": "^0.15.3",
     "steal-tools": "^0.15.5"
+  },
+  "system" : {
+      "ext" : {
+          "stache" : "can/view/stache/system"
+      },
+      "paths" : {
+        "test/*"      : "modules/test/*.js",
+        "test/*.stache"      : "modules/test/*.stache"
+      },
+      "envs": {
+        "production": {
+            "paths": {        
+                "test/*"      : "test/*.js",
+                "test/*.stache"      : "test/*.stache"
+            }
+         }
+      }         
   }
 }

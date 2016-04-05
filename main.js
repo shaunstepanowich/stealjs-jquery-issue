@@ -1,3 +1,6 @@
-var jQuery = require('jquery');
-
-console.log('hello world');
+steal('jquery',
+      'test/AppControl.js',
+function(jQuery,AppControl) {
+    
+    var appControl = new AppControl('#appControl');
+});
