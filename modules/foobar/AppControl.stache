@@ -1,3 +1,5 @@
 <h1>Hello World</h1>
 
 <a id="clickme">click me</a>
+
+<div id="anotherControl">EMPTY</div>

@@ -16,14 +16,10 @@ define(['can','modules/foobar/AppControl.stache'],function(can,view) {
             
             var me = this;
             
-            console.log('click!');
-            System.import('modules/foobar/AnotherTemplate.stache!').then(function(renderer){
+            System.import('modules/foobar/AnotherControl').then(function(AnotherControl){
                
-                console.log('here');
-                var viewFrag = renderer();
-                me.element.empty();
-                me.element.append(viewFrag);               
-                
+                var anotherControl = new AnotherControl('#anotherControl');
+                               
             });
             
         }
