@@ -19,6 +19,7 @@
   "system" : {
       "ext" : {
           "stache" : "can/view/stache/system"
-      }
+      },
+      "bundle": ["modules/foobar/AnotherControl"]            
   }
 }
