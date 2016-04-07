@@ -16,10 +16,10 @@ define(['can','foobar/AppControl.stache'],function(can,view) {
             
             var me = this;
             
-            System.import('foobar/AnotherTemplate.stache!',function(anotherView){
+            System.import('foobar/AnotherTemplate.stache!',function(renderer){
                 
-                var viewFrag = can.view(anotherView);
-            
+                
+                var viewFrag = renderer();
                 me.element.empty();
                 me.element.append(viewFrag);                                
                 
