@@ -16,7 +16,7 @@ define(['can','foobar/AppControl.stache'],function(can,view) {
             
             var me = this;
             
-            System.import('foobar/AnotherTemplate.stache',function(anotherView){
+            System.import('foobar/AnotherTemplate.stache!',function(anotherView){
                 
                 var viewFrag = can.view(anotherView);
             
