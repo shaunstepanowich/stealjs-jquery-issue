@@ -19,18 +19,6 @@
   "system" : {
       "ext" : {
           "stache" : "can/view/stache/system"
-      },
-      "paths" : {
-        "foobar/*"      : "modules/foobar/*.js",
-        "foobar/*.stache"      : "modules/foobar/*.stache"
-      },
-      "envs": {
-        "production": {
-            "paths": {        
-                "foobar/*"      : "foobar/*.js",
-                "foobar/*.stache"      : "foobar/*.stache"
-            }
-         }
-      }         
+      }
   }
 }

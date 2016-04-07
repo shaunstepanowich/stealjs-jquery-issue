@@ -1,4 +1,4 @@
-define(['can','foobar/AppControl.stache'],function(can,view) {
+define(['can','modules/foobar/AppControl.stache'],function(can,view) {
     
     return can.Control.extend({
 		  
@@ -16,9 +16,12 @@ define(['can','foobar/AppControl.stache'],function(can,view) {
             
             var me = this;
             
-            System.import('foobar/AnotherTemplate.stache!',function(renderer){
+            console.log('click!');
+            System.import('modules/foobar/AnotherTemplate.stache!',function(renderer)
+            {
                 
                 
+                console.log('here');
                 var viewFrag = renderer();
                 me.element.empty();
                 me.element.append(viewFrag);                                
