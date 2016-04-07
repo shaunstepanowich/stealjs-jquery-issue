@@ -17,14 +17,12 @@ define(['can','modules/foobar/AppControl.stache'],function(can,view) {
             var me = this;
             
             console.log('click!');
-            System.import('modules/foobar/AnotherTemplate.stache!',function(renderer)
-            {
-                
-                
+            System.import('modules/foobar/AnotherTemplate.stache!').then(function(renderer){
+               
                 console.log('here');
                 var viewFrag = renderer();
                 me.element.empty();
-                me.element.append(viewFrag);                                
+                me.element.append(viewFrag);               
                 
             });
             
