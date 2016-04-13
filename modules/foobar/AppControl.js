@@ -1,4 +1,6 @@
-define(['can','modules/foobar/AppControl.stache'],function(can,view) {
+define(['can',
+        'modules/foobar/AppControl.stache',
+        'modules/foobar/AppControl.css'],function(can,view) {
     
     return can.Control.extend({
 		  
